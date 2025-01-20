@@ -3,16 +3,44 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
-const Navbar = () => {
+const Navbar = ({ isAuthenticated }) => {
+    const handleLogout = () => {
+        localStorage.removeItem("userEmail"); // Clear user session
+        window.location.href = "/login"; // Redirect to login
+    };
+
     return (
         <nav>
-            <h1><Link to="/">Blog Application</Link></h1>
             <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/create">Create Post</Link></li>
+                <li>
+                    <Link to="/">Home</Link>
+                </li>
+                {isAuthenticated ? (
+                    <>
+                        <li>
+                            <Link to="/create">Create Post</Link>
+                        </li>
+                        <li>
+                            <Link to="/contactmanager">Contact Manager</Link>
+                        </li>
+                        <li>
+                            <button onClick={handleLogout}>Logout</button>
+                        </li>
+                    </>
+                ) : (
+                    <>
+                        <li>
+                            <Link to="/login">Login</Link>
+                        </li>
+                        <li>
+                            <Link to="/register">Register</Link>
+                        </li>
+                    </>
+                )}
             </ul>
         </nav>
     );
 };
+
 
 export default Navbar;

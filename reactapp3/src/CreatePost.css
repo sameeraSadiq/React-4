@@ -3,12 +3,12 @@
 form {
     max-width: 600px; /* Limit form width */
     margin: 20px auto; /* Center the form */
-    padding: 20px; /* Inner padding */
+    padding: 20px; 
     border: 1px solid #ccc; /* Light border */
-    border-radius: 8px; /* Rounded corners */
-    background-color: #f9f9f9; /* Light background */
+    border-radius: 8px; 
+    background-color: #f9f9f9; 
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-    transition: transform 0.2s ease; /* Smooth hover effect */
+    transition: transform 0.2s ease; 
 }
 
 form:hover {
@@ -16,7 +16,7 @@ form:hover {
 }
 
 h2 {
-    text-align: center; /* Center the title */
+    text-align: center; 
     color: #333; /* Title color */
     font-family: 'Arial', sans-serif; /* Font family */
     margin-bottom: 20px; /* Space below title */
@@ -25,18 +25,18 @@ h2 {
 input[type="text"],
 textarea {
     width: 100%; /* Full width */
-    padding: 12px; /* Inner padding */
-    margin: 10px 0; /* Space above and below */
+    padding: 12px; 
+    margin: 10px 0; 
     border: 1px solid #007bff; /* Blue border */
     border-radius: 4px; /* Rounded corners */
-    font-size: 16px; /* Font size */
-    box-sizing: border-box; /* Include padding in width */
+    font-size: 16px; 
+    box-sizing: border-box; 
     transition: border-color 0.3s ease; /* Smooth border color change */
 }
 
 input[type="text"]:focus,
 textarea:focus {
-    border-color: #0056b3; /* Darker blue on focus */
+    border-color: #0056b3; 
     outline: none; /* Remove default outline */
 }
 
@@ -47,16 +47,16 @@ textarea {
 
 button {
     background-color: #007bff; /* Blue background */
-    color: white; /* Text color */
-    padding: 10px 15px; /* Inner padding */
+    color: white; 
+    padding: 10px 15px; 
     border: none; /* Remove border */
     border-radius: 5px; /* Rounded corners */
     cursor: pointer; /* Pointer cursor */
-    font-size: 16px; /* Font size */
-    width: 100px; /* Fixed width */
+    font-size: 16px; 
+    width: 100px; 
     transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
-    display: block; /* Center the button as a block element */
-    margin: 20px auto; /* Center the button */
+    display: block; 
+    margin: 20px auto; 
 }
 
 button:hover {
@@ -69,15 +69,15 @@ button:active {
 }
 
 .message {
-    text-align: center; /* Center message */
-    color: #28a745; /* Success color */
+    text-align: center; 
+    color: #28a745; 
     margin-top: 15px; /* Space above message */
-    font-size: 16px; /* Font size */
+    font-size: 16px; 
 }
 
 @media (max-width: 600px) {
     form {
-        padding: 15px; /* Reduce padding on smaller screens */
+        padding: 15px; 
     }
 
     button {

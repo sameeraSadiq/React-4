@@ -51,7 +51,7 @@ a:hover {
     }
 
     li {
-        margin-left: 0; /* Remove left margin for mobile */
+        margin-left: 0; 
         margin-bottom: 10px; /* Space between links */
     }
 }
